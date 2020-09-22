@@ -2,21 +2,34 @@
 """Plot tools: Reusable utilities for working with matplotlib plots.
 
 Contents:
-params_(reports|poster|...)
-                    Standard parameter sets for final-quality plots
-colors              Easily distinguishable color sets
+cb_colors           Easily distinguishable color sets
+cb_color_cycle      Color cycle for the above, to use in plots
 
 Functions:
 plot_smoothed       Plot a time series smoothed with a cosine kernel
 plot_acorr          Plot the autocorrelation of a timeseries
 thin_points         Thin data points that are too close to each other
-thin_transformed    Thin data points in a transformed space
+thin_transformed    Thin data points in a transformed (e.g. log) space
 scatter_thin_points Plot a set of thinned data points with weight info
 scatter_mark_outliers
                     Mark outliers at the edges of a scatterplot
 scatter_outliers_size
                     Make a scatterplot with sizes and outliers
 
+Copyright © 2018 Max Veit.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 
